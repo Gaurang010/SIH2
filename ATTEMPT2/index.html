@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible CAPTCHA Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Experience Friendly Captcha yourself.</h1>
+        <p>Friendly Captcha is the first truly invisible CAPTCHA based on proof-of-work. Instead of prompting any visible challenge to the end user, it checks the end user’s device in the background.</p>
+        <form id="captcha-form">
+            <label for="test-name">Test Name <span>*</span></label>
+            <input type="text" id="test-name" placeholder="Start typing. See the difference." required>
+            
+            <label for="test-message">Test Message</label>
+            <textarea id="test-message" placeholder="Type your message here"></textarea>
+            
+            <div class="captcha">
+                <span>Anti-Robot Verification</span>
+                <button type="button" id="verify-button">Click to start verification</button>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
